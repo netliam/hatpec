@@ -42,8 +42,12 @@ defmodule AppWeb.UserLoginLive do
 
           <.card_content class="flex items-center justify-between">
             <div class="flex items-start">
-              <div class="flex items-center h-5"><.input id="remember" field={@form[:remember_me]} type="checkbox" /></div>
-              <div class="ml-3 text-sm"><.label for="remember">Remember me</.label></div>
+              <div class="flex items-center h-5">
+                <.input id="remember" field={@form[:remember_me]} type="checkbox" />
+              </div>
+              <div class="ml-3 text-sm">
+                <.label for="remember">Remember me</.label>
+              </div>
             </div>
             <.link href={~p"/users/reset_password"} class="text-sm font-medium hover:underline ">
               Forgot your password?
